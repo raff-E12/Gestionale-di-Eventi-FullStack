@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario Eventi</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_Version2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.11.3/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.11.3/main.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <h1>Calendario Eventi</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profilo</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Calendar Section -->
+  <main>
+    <section class="calendar-container">
+      <div id="calendar"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Event Management System. All rights reserved.</p>
+  </footer>
+
+  <!-- FullCalendar Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.11.3/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.11.3/main.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['dayGrid'],
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,dayGridWeek,dayGridDay'
+        },
+        events: [
+          { 
+            title: 'Workshop JavaScript', 
+            start: '2025-05-20', 
+            description: 'Un workshop intensivo sul JavaScript moderno.' 
+          },
+          { 
+            title: 'Hackathon 2025', 
+            start: '2025-05-22', 
+            end: '2025-05-23', 
+            description: 'Partecipa al nostro hackathon annuale!' 
+          },
+          { 
+            title: 'Conferenza Tech', 
+            start: '2025-05-25', 
+            description: 'Una conferenza su innovazioni tecnologiche.' 
+          },
+          { 
+            title: 'Evento di Team Building', 
+            start: '2025-05-28', 
+            description: 'Attività di team building per gruppi di lavoro.' 
+          }
+        ],
+        eventClick: function(info) {
+          alert('Evento: ' + info.event.title + '\nDescrizione: ' + (info.event.extendedProps.description || 'Nessuna descrizione disponibile.'));
+        }
+      });
+      calendar.render();
+    });
+  </script>
+</body>
+</html>

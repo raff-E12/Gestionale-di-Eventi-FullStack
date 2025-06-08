@@ -1,0 +1,88 @@
+ 
+ /***** WebApp Style *****/ 
+ 
+@import "tailwindcss";
+
+@layer base{
+  .header-sc{
+    @apply bg-gradient-to-br from-purple-500 to-indigo-500 text-white 
+    p-4 shadow-md absolute w-full;
+  }
+
+  .header-sc .container-sc{
+    @apply container mx-auto flex justify-between items-center;
+  }
+
+  .header-sc .container-sc h1{
+    @apply text-lg font-bold;
+  }
+
+  .header-sc .container-sc ul{
+    @apply flex space-x-6;
+  }
+
+  .header-sc .container-sc ul li a{
+    @apply hover:underline;
+  }
+}
+
+@layer base{
+  .hero-sc{
+    @apply bg-gradient-to-br from-indigo-500 to-purple-500 text-white 
+    text-center py-20 h-[80vh] flex items-center justify-center;
+  }
+
+  .hero-sc .container-sc{
+    @apply container mx-auto flex justify-center items-center flex-col gap-2;
+  }
+
+  .hero-sc .container-sc h2{
+    @apply text-4xl font-bold mb-4;
+  }
+
+  .hero-sc .container-sc p{
+    @apply text-lg mb-6;
+  }
+
+  .hero-sc .container-sc .btns{
+    @apply bg-white text-indigo-500 py-2 px-6 rounded-full shadow-md hover:bg-gray-200 transition duration-300
+  }
+
+  .main-sc{
+    @apply container mx-auto py-10;
+  }
+
+  .main-sc h3{
+    @apply text-center text-2xl font-bold mb-6;
+  }
+
+  .main-sc .cards-sc{
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6;
+  }
+
+  .main-sc .cards-sc .cards{
+    @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .main-sc .cards-sc .cards h4{
+    @apply text-lg font-bold mb-2;
+  }
+
+  .footer-sc{
+    @apply bg-gray-800 text-white py-6;
+  }
+
+  .footer-sc .container-sc{
+    @apply container mx-auto text-center;
+  }
+
+  .container-mouth{
+    @apply h-[900hv] p-10;
+  }
+
+  #role{
+    @apply w-full bg-amber-50 p-1 mb-6;
+  }
+}
+ 
+ /***** End WebApp Style *****/

@@ -1,0 +1,64 @@
+
+/***** FormData Event WebPage *****/ 
+
+    .form-section {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-section .form-container {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-section .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-section label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-section input[type="text"],
+    .form-section input[type="date"],
+    .form-section input[type="datetime-local"], .form-section
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .form-section textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .form-section .output {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #f1f1f1;
+      border-left: 4px solid #007acc;
+      border-radius: 6px;
+      color: #333;
+    }
+
+
+/***** End FormData Event WebPage *****/

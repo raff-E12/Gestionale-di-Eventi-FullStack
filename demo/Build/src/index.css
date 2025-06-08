@@ -1,0 +1,122 @@
+
+/***** Css Reset Webapp *****/ 
+
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  html {
+    @apply text-base leading-normal text-gray-900;
+  }
+
+  body {
+    @apply antialiased bg-white overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+  }
+
+  a {
+    @apply text-blue-500 no-underline hover:underline;
+  }
+
+  ul, ol {
+    @apply list-none;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  button {
+    @apply cursor-pointer focus:outline-none;
+  }
+
+  table {
+    @apply border-collapse border-spacing-0;
+  }
+}
+
+/* Classi opzionali */
+@layer components {
+  .btn {
+    @apply inline-block px-4 py-2 text-center text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-all;
+  }
+
+  .btn-outline {
+    @apply inline-block px-4 py-2 text-center text-blue-500 border border-blue-500 rounded-lg hover:bg-blue-100 transition-all;
+  }
+
+  .btn-danger {
+    @apply inline-block px-4 py-2 text-center text-white bg-red-500 rounded-lg hover:bg-red-600 transition-all;
+  }
+
+  .card {
+    @apply p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow;
+  }
+
+  .container {
+    @apply max-w-6xl mx-auto px-4;
+  }
+
+  .row {
+    @apply flex flex-wrap -mx-4;
+  }
+
+  .col {
+    @apply px-4;
+  }
+
+  .alert {
+    @apply p-4 text-white rounded-lg mb-4;
+  }
+
+  .alert-success {
+    @apply bg-green-500;
+  }
+
+  .alert-warning {
+    @apply bg-yellow-500;
+  }
+
+  .alert-danger {
+    @apply bg-red-500;
+  }
+}
+
+/* Classi versatili */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-gradient {
+    background: linear-gradient(to right, #4F46E5, #9333EA);
+  }
+
+  .hover-grow {
+    @apply transition-transform transform hover:scale-105;
+  }
+
+  .hover-shrink {
+    @apply transition-transform transform hover:scale-95;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-hard {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/***** End Css Reset *****/

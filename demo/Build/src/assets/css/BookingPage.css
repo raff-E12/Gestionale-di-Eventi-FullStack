@@ -1,0 +1,75 @@
+/***** Booking Section *****/ 
+
+    .booking-sc {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      height: 220vh;
+      padding: 80px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .booking-sc .container {
+      display: flex;
+      gap: 20px;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 100%;
+      text-align: left;
+      font-weight: 500;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card.disabled{
+      pointer-events: none;
+      background-color: #ddd;
+    }
+
+    .card.disabled button, .card.disabled #btn-pred {
+      background-color: #333;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    .card .date {
+      font-weight: bold;
+      margin: 10px 0;
+      color: #222;
+    }
+
+    .card #btn-pred {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card #btn-pred:hover {
+      background-color: #0056b3;
+    }
+
+/***** End Booking Section *****/

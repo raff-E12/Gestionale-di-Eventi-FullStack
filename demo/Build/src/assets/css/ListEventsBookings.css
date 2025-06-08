@@ -1,0 +1,61 @@
+
+/***** Events List WebPages *****/  
+
+   .event-view {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      height: 100vh;
+      padding: 100px;
+    }
+
+    .event-view .container {
+      width: 100%;
+      height: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-view h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .event-details {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .event-details p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .attendees {
+      list-style: none;
+      padding: 0;
+    }
+
+    .attendees li {
+      background-color: #ecf0f1;
+      margin: 10px 0;
+      padding: 12px 15px;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+    }
+
+    @media (max-width: 600px) {
+      .event-view .container {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      .event-view .attendees li {
+        font-size: 14px;
+      }
+    }
+
+
+/***** End Events List WebPages *****/
